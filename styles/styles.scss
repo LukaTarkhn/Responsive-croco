@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Inter&display=swap');
+@import 'splited/reset';
+
+body {
+    background-color: #11171e;
+    padding: 6px;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+}
+.header-block {
+    display: flex;
+    flex-direction: row;
+    padding-right: 6px;
+    height: 119px;
+    width: 100%;
+}
+.header-block__left {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f252d;
+    padding: 0 12% 0 12%;
+}
+.header-block__package-icon {
+    width: 100%;
+    height: auto;
+}
+.header-block__text {
+    color: #657387;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2rem;
+    padding: 0 6% 0 6%;
+}
+.header-block__value {
+    color: #37a117;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.6rem;
+    padding: 0 6% 0 6%;
+}
+.header-block__reload-icon {
+    width: 25px;
+    height: 25px;
+}
+.header-block__right {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #1b2028;
+    padding: 0 8% 0 8%;
+    width: 100%;
+}
+.header-block__ticket-ball-icon {
+    width: 100%;
+    height: auto;
+}
+.header-block__ticket7-icon {
+    width: 100%;
+    height: auto;
+}
+.header-block_login {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 119px;
+    width: 30%;
+}
+.header-block__user-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #1f252d;
+}
+.header-block__user-icon {
+    width: 50%;
+    height: auto;
+    padding-bottom: 4px;
+}
+.header-block__user-id {
+    color: #657387;
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+}
+.header-block__user-name {
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+}
+.header-block__user-status {
+    font-size: 10px;
+    font-family: 'Inter', sans-serif;
+    color: #37a117;
+
+}
+.header-block__transparent-edit-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.header-block__user-right {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 18px;
+    background-color: #1b2028;
+}
+.header-block__tasks-icon {
+    position: absolute;
+    bottom: 18px;
+}
+.button {
+    display: inline-block;
+    border: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-align: center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding: 12px 20px;
+    outline: none;
+}
+.header-block__deposit {
+    color: #ffff;
+    background-color: #338f1c;
+}
+
+.test {
+    background-color: red;
+}
+
