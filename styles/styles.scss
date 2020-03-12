@@ -54,7 +54,10 @@ body {
         @include blockSize(60%, auto);
         transition: transform 0.2s ease-in-out;
         &:hover {
-            transform: scale(1.2);
+            animation-name: spin;
+            animation-duration: 5000ms;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear; 
         }
     }
     &__right {
@@ -93,6 +96,7 @@ body {
         font-family: 'Inter', sans-serif;
         font-size: 10px;
         padding: 0 10px 4px 10px;
+        text-transform: uppercase;
     }
     &__user-status {
         font-size: 10px;
@@ -133,5 +137,81 @@ body {
     &__deposit {
         color: $white;
         background-color: $color_5;
+    }
+}
+.btn-active {
+    background-color: $color_8;
+    color: $white;
+}
+
+.body {
+    padding-top: 6px;
+    .navigation {
+        @include blockSize(18.2%, auto);
+        min-height:500px;
+        min-width: 250px;
+        background-color: $color_1;
+        .menu {
+            position: relative;
+            padding-top: 23px;
+            & a {
+                color: $white;
+                text-decoration: none;
+                font-family: 'Inter', sans-serif;
+                font-size: 15px;
+                &  span {
+                    position: absolute;
+                    left: 36px;
+                    top: 17.5px;
+                }
+            }
+            &__dash {
+               margin-bottom: 5px;
+               padding: 0 25px 0 25px;
+            }
+            &__dash path{
+                fill: #515b6c;
+                &:hover {
+                    fill: red;
+                }
+            }
+            &__icon {
+                position: absolute;
+                left: 13px;
+                top: 13.5px;
+            }
+            &__arrow {
+                position: absolute;
+                right: 13px;
+                top: 17.5px;
+            }
+            &__sub {
+                font-family: 'Inter', sans-serif;
+                font-size: 15px;
+                margin-top: 30px;
+                background-color: #1f252d;
+                display: none;
+                & a {
+                    margin-left: 70px;
+                    color: $color_9;
+                    &:hover,
+                    &:hover > .menu__dash path {
+                        color: #fff
+                    }
+                }
+                & li {
+                    padding-bottom: 10px;
+                    &:hover > .menu__dash path{
+                        fill: #338f1c;
+                    }
+                }
+                & span {
+                    position: static !important;  
+                }
+            }
+        }
+        .active-menu { 
+            display: block;
+        }
     }
 }
