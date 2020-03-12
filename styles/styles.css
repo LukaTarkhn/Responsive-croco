@@ -61,7 +61,12 @@ body {
   outline: none;
 }
 
-.header {
+.button:hover {
+  background-color: #2cb103;
+  color: #fff;
+}
+
+.header, .header-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -72,13 +77,6 @@ body {
 }
 
 .header-block {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   padding-right: 6px;
   min-height: 119px;
   width: 100%;
