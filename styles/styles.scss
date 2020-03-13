@@ -145,6 +145,7 @@ body {
 }
 
 .body {
+    display: flex;
     padding-top: 6px;
     .navigation {
         @include blockSize(18.2%, auto);
@@ -210,10 +211,94 @@ body {
                 fill: #515b6c;
             }
         }
-
         .active-menu .menu__arrow
         {
             transform:rotate(90deg);
+        }
+    }
+    .content {
+        @include blockSize(81.8%, auto);
+        margin-right: 6px;
+        font-family: 'Inter', sans-serif;
+        color: $white;
+        .cards {
+            @include blockSize(100%, auto);
+            min-height: 161px;
+            @include flexbox(row);
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            background-color: #1f252d;
+            margin: 0 6px 0 6px;
+            background-color: $color_3;
+            .cards__add {
+                @include blockSize(171px, 122px);
+                border: 1px dashed #303742;
+                margin: 20px 17px;
+                @include flexbox(column);
+                font-family: 'Inter', sans-serif;
+                color: #637083;
+                text-decoration: none;
+                font-size: 12px;
+            }
+            .cards__card {
+                @extend .cards__add;
+                border: none;
+                &_title {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                    @include blockSize(171px, 37px);
+                    background-color: $color_10;
+                    color: $white;
+                    & img {
+                        position: absolute;
+                        right: 13px;
+                        transition: transform 0.2s ease-in-out;
+                        &:hover {
+                            transform: scale(1.2);
+                        }
+                    }
+                }
+                &_content {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    @include blockSize(171px, 85px);
+                    background-color: $color_1;
+                }
+            }
+        }
+        .deposites {
+            @include blockSize(100%, auto);
+            @include flexbox(row);
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            margin: 16px 6px 16px 6px;
+            .deposit {
+                @include blockSize(480px, 93px);
+                display: flex;
+                margin: 0 16px 16px 0;
+                &__left {
+                    @include flexbox(row);
+                    background-color: $color_2;
+                    width: 295px;
+                }
+                &__text {
+                    @include flexbox(column);
+                    font-size: 12px;
+                    margin-left: 50px;
+                }
+                &__right {
+                    @include flexbox(column);
+                    background-color: $color_3;
+                    width: 185px;
+                    & span {
+                        padding-top: 10px;
+                        color: #637185;
+                    }
+                }
+            }
         }
     }
 }
