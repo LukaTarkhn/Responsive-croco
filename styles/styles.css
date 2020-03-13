@@ -324,78 +324,78 @@ body {
 
 .body .navigation .menu {
   position: relative;
-  padding-top: 23px;
+  text-decoration: none;
 }
 
-.body .navigation .menu a {
+.body .navigation .menu li {
   color: #fff;
-  text-decoration: none;
   font-family: 'Inter', sans-serif;
   font-size: 15px;
+  position: relative;
+  list-style-type: none;
+  height: 35px;
+  padding-bottom: 13px;
 }
 
-.body .navigation .menu a span {
+.body .navigation .menu li span {
   position: absolute;
   left: 36px;
-  top: 17.5px;
-}
-
-.body .navigation .menu__dash {
-  margin-bottom: 5px;
-  padding: 0 25px 0 25px;
-}
-
-.body .navigation .menu__dash path {
-  fill: #515b6c;
-}
-
-.body .navigation .menu__dash path:hover {
-  fill: red;
+  top: 18px;
 }
 
 .body .navigation .menu__icon {
   position: absolute;
   left: 13px;
-  top: 13.5px;
+  margin-top: 13.5px;
 }
 
 .body .navigation .menu__arrow {
-  position: absolute;
-  right: 13px;
-  top: 17.5px;
+  position: relative;
+  right: -89%;
+  margin-top: 17.5px;
 }
 
-.body .navigation .menu__sub {
+.body .navigation .sub-menu {
   font-family: 'Inter', sans-serif;
   font-size: 15px;
-  margin-top: 30px;
+  padding: 15px 0 20px 0;
   background-color: #1f252d;
   display: none;
 }
 
-.body .navigation .menu__sub a {
+.body .navigation .sub-menu a {
   margin-left: 70px;
   color: #777f88;
+  text-decoration: none;
 }
 
-.body .navigation .menu__sub a:hover,
-.body .navigation .menu__sub a:hover > .menu__dash path {
+.body .navigation .sub-menu a:hover {
   color: #fff;
 }
 
-.body .navigation .menu__sub li {
+.body .navigation .sub-menu li {
   padding-bottom: 10px;
 }
 
-.body .navigation .menu__sub li:hover > .menu__dash path {
+.body .navigation .sub-menu li:hover > .sub-menu__dash path {
   fill: #338f1c;
 }
 
-.body .navigation .menu__sub span {
+.body .navigation .sub-menu span {
   position: static !important;
 }
 
-.body .navigation .active-menu {
-  display: block;
+.body .navigation .sub-menu__dash {
+  margin-bottom: 5px;
+  padding: 0 25px 0 25px;
+}
+
+.body .navigation .sub-menu__dash path {
+  fill: #515b6c;
+}
+
+.body .navigation .active-menu .menu__arrow {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 /*# sourceMappingURL=styles.css.map */
